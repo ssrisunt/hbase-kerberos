@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aspectj>
+<aspects>
+    <aspect name="com.srisunt.aspect.MyAspect"/>
+</aspects>
+    <weaver options="-verbose -Xset:weaveJavaxPackages=true -Xset:weaveJavaPackages=true">
+    </weaver>
+</aspectj>
