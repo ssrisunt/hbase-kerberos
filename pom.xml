@@ -127,6 +127,19 @@
             <artifactId>phoenix-core</artifactId>
             <version>4.4.0.2.4.0.7-11</version>
         </dependency>
+             
+             
+              <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjrt</artifactId>
+            <version>1.7.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.5.4</version>
+        </dependency>
 
 
     </dependencies>
