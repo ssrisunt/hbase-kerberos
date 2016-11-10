@@ -1,0 +1,48 @@
+  <configuration>
+    
+    <property>
+      <name>hive.metastore.kerberos.keytab.file</name>
+      <value>/etc/security/keytabs/hive.service.keytab</value>
+    </property>
+    
+    <property>
+      <name>hive.metastore.kerberos.principal</name>
+      <value>hive/_HOST@EXAMPLE.COM</value>
+    </property>
+    
+    <property>
+      <name>hive.metastore.sasl.enabled</name>
+      <value>true</value>
+    </property>
+    
+    <property>
+      <name>hive.metastore.uris</name>
+      <value>thrift://sandbox.hortonworks.com:9083</value>
+    </property>
+    
+    <property>
+      <name>hive.server2.authentication</name>
+      <value>KERBEROS</value>
+    </property>
+    
+    <property>
+      <name>hive.server2.authentication.kerberos.keytab</name>
+      <value>/etc/security/keytabs/hive.service.keytab</value>
+    </property>
+    
+    <property>
+      <name>hive.server2.authentication.kerberos.principal</name>
+      <value>hive/_HOST@EXAMPLE.COM</value>
+    </property>
+    
+    <property>
+      <name>hive.server2.authentication.spnego.keytab</name>
+      <value>/etc/security/keytabs/spnego.service.keytab</value>
+    </property>
+    
+    <property>
+      <name>hive.server2.authentication.spnego.principal</name>
+      <value>HTTP/_HOST@EXAMPLE.COM</value>
+    </property>
+    
+  </configuration>

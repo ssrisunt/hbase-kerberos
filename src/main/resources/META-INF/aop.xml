@@ -3,6 +3,9 @@
 <aspects>
     <aspect name="com.srisunt.aspect.MyAspect"/>
 </aspects>
-    <weaver options="-verbose -Xset:weaveJavaxPackages=true -Xset:weaveJavaPackages=true">
+    <weaver options="-verbose -Xset:weaveJavaxPackages=false -Xset:weaveJavaPackages=false">
+        <include within="org.apache.hadoop.security.SecurityUtil..*"/>
+        <include within="org.apache.hadoop.security.SaslRpcClient..*"/>
+        <exclude within="org.spark-project..*"/>
     </weaver>
 </aspectj>

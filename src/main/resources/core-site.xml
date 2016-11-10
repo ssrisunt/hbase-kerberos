@@ -138,6 +138,8 @@ RULE:[1:$1@$0](hbase-Sandbox@EXAMPLE.COM)s/.*/hbase/
 RULE:[1:$1@$0](hdfs-Sandbox@EXAMPLE.COM)s/.*/hdfs/
 RULE:[1:$1@$0](spark-Sandbox@EXAMPLE.COM)s/.*/spark/
 RULE:[1:$1@$0](.*@EXAMPLE.COM)s/@.*//
+RULE:[1:$1@$0](.*@YONG.LOCAL)s/@.*//
+RULE:[1:$1@$0](ssrisunt@YONG.LOCAL)s/@.*//
 RULE:[2:$1@$0](amshbase@EXAMPLE.COM)s/.*/ams/
 RULE:[2:$1@$0](amszk@EXAMPLE.COM)s/.*/ams/
 RULE:[2:$1@$0](atlas@EXAMPLE.COM)s/.*/atlas/
@@ -211,9 +213,9 @@ DEFAULT</value>
       <value>false</value>
     </property>
     
-    <property>
-      <name>net.topology.script.file.name</name>
-      <value>/etc/hadoop/conf/topology_script.py</value>
-    </property>
+    <!--<property>-->
+      <!--<name>net.topology.script.file.name</name>-->
+      <!--<value>/etc/hadoop/conf/topology_script.py</value>-->
+    <!--</property>-->
     
   </configuration>
