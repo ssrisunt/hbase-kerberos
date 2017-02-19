@@ -156,4 +156,9 @@ q
     -javaagent:/Users/ssrisunt/Downloads/spring-aop-blog-master/spring-aop-aspectj-ltw/aspectjweaver-1.8.8.jar
     -noverify
     
-    
+    # Date Range
+
+## Past 12 Calendar Months
+
+> select date_sub(concat(from_unixtime(unix_timestamp('2017-02-06 20:00:00'), 'yyyy-MM'), '-01'),1) as END_DATE , > DATE_SUB(date_sub(concat(from_unixtime(unix_timestamp('2017-02-06 20:00:00'), 'yyyy-MM'), '-01'),1), 12\*30) as  12_months_from_Date,
+> DATE_ADD(DATE_SUB(date_sub(concat(from_unixtime(unix_timestamp('2017-02-06 20:00:00'), 'yyyy-MM'), '-01'),1),  12\*30),1-DAY(DATE_SUB(date_sub(concat(from_unixtime(unix_timestamp('2017-02-06 20:00:00'), 'yyyy-MM'), '-01'),1), 12\*30))) as START_DATE
